@@ -47,7 +47,9 @@ jobs:
         run: curl -vk --fail-with-body https://localhost
       -
         name: Create test database
-        run: docker compose exec -T php bin/console -e test doctrine:database:create
+        run: |
+          docker compose exec -T php bin/console -e test doctrine:database:create
+          docker compose exec -T php bin/console -e test doctrine:schema:update --force
       -
         name: Run migrations
         run: docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
