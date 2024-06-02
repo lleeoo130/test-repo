@@ -49,10 +49,11 @@ jobs:
         name: Create test database
         run: |
           docker compose exec -T php bin/console -e test doctrine:database:create
-          docker compose exec -T php bin/console -e test doctrine:schema:update --force
       -
         name: Run migrations
-        run: docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
+        run: |
+          docker compose exec -T php bin/console -e test doctrine:migrations:migrate --no-interaction
+          docker compose exec -T php bin/console -e test doctrine:schema:update --force
       -
         name: Run PHPUnit
         if: false # Remove this line if PHPUnit is installed
