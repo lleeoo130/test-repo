@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="" />
+    <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#ib_16384_0.dblwr" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo9" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Repository/UserRepository.php" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,6 +122,19 @@
       <path value="$PROJECT_DIR$/vendor/symfony/panther" />
       <path value="$PROJECT_DIR$/vendor/php-webdriver/webdriver" />
       <path value="$PROJECT_DIR$/vendor/dbrekelmans/bdi" />
+      <path value="$PROJECT_DIR$/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-http" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-info" />
+      <path value="$PROJECT_DIR$/vendor/symfony/password-hasher" />
+      <path value="$PROJECT_DIR$/vendor/symfony/form" />
+      <path value="$PROJECT_DIR$/vendor/symfony/options-resolver" />
+      <path value="$PROJECT_DIR$/vendor/symfony/clock" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-csrf" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-core" />
+      <path value="$PROJECT_DIR$/vendor/symfony/security-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/property-access" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-intl-icu" />
+      <path value="$PROJECT_DIR$/vendor/hwi/oauth-bundle" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -188,10 +206,14 @@
         <option value="php-symfony_http_foundation-37cbfb0ca1b6-df2d1f26" />
         <option value="php-symfony_http_kernel-37cbfb0ca1b6-6850ef07" />
         <option value="php-symfony_monolog_bundle-37cbfb0ca1b6-4394eb10" />
+        <option value="php-symfony_options_resolver-37cbfb0ca1b6-942d13ee" />
         <option value="php-symfony_process-37cbfb0ca1b6-0c45b194" />
         <option value="php-symfony_process-37cbfb0ca1b6-3c743ae3" />
+        <option value="php-symfony_property_access-37cbfb0ca1b6-10c893ff" />
         <option value="php-symfony_property_access-37cbfb0ca1b6-9caa8663" />
+        <option value="php-symfony_property_info-37cbfb0ca1b6-dd1584a5" />
         <option value="php-symfony_routing-37cbfb0ca1b6-2eb007bc" />
+        <option value="php-symfony_security_core-37cbfb0ca1b6-a3810492" />
         <option value="php-symfony_string-37cbfb0ca1b6-6da9c235" />
         <option value="php-symfony_string-37cbfb0ca1b6-7df50316" />
         <option value="php-symfony_twig_bridge-37cbfb0ca1b6-305a503d" />
@@ -215,7 +237,7 @@
       <updated>1717070712658</updated>
       <workItem from="1717070713703" duration="3790000" />
       <workItem from="1717086492435" duration="2792000" />
-      <workItem from="1717332017981" duration="6567000" />
+      <workItem from="1717332017981" duration="6923000" />
     </task>
     <servers />
   </component>
