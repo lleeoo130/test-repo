@@ -10,5 +10,9 @@
 
 <div class="example-wrapper">
     <h1>{{ message }}</h1>
+
+    <a href="{{ path('hwi_oauth_service_redirect', {'service': 'google' }) }}">
+        <span>Login with Google</span>
+    </a>
 </div>
 {% endblock %}
