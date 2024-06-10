@@ -59,3 +59,6 @@ sf: ## List all Symfony commands or pass the parameter "c=" to run a given comma
 
 cc: c=c:c ## Clear the cache
 cc: sf
+
+fixtures: ## Loads fixtures
+	@$(PHP_CONT) bin/console doctrine:fixtures:load
