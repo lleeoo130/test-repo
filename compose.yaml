@@ -53,9 +53,9 @@ services:
 #      retries: 5
 #      start_period: 60s
     volumes:
-#      - database_data:/var/lib/mysql:rw
+      - database_data:/var/lib/mysql2:rw
       # You may use a bind-mounted host directory instead, so that it is harder to accidentally remove the volume and lose all your data!
-      - ./docker/db/data:/var/lib/mysql:rw
+#      - ./docker/db/data:/var/lib/mysql:rw
 ###< doctrine/doctrine-bundle ###
 
 volumes:

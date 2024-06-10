@@ -5,30 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/config/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Security/Google/OAuthConnector.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/hwi_oauth.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/hwi_oauth.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/#ib_16384_0.dblwr" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#ib_16384_0.dblwr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo9" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo9" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/app/doctrine_migration_versions.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/app/doctrine_migration_versions.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/app/user.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/app/user.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/binlog.000006" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/binlog.000006" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/ibdata1" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/ibdata1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/mysql.ibd" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/mysql.ibd" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/undo_001" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/undo_001" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/db/data/undo_002" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/undo_002" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/welcome/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo10_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo11_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo11_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo12_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo12_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo13_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo13_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo14_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo14_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo15_tmp" beforeDir="false" afterPath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo15_tmp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo16_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo17_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo18_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo19_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo20_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo21_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo22_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo23_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo24_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo25_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo26_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo27_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo28_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo29_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo30_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo31_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo32_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo33_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo34_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo35_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo36_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo37_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo38_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo39_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo40_tmp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/#innodb_redo/#ib_redo9" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/app/doctrine_migration_versions.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/app/hero.ibd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker/db/data/app/user.ibd" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
