@@ -61,4 +61,4 @@ cc: c=c:c ## Clear the cache
 cc: sf
 
 fixtures: ## Loads fixtures
-	@$(PHP_CONT) bin/console doctrine:fixtures:load
+	@$(PHP_CONT) bin/console doctrine:fixtures:load --no-interaction
