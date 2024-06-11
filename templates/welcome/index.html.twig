@@ -9,10 +9,25 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>{{ message }}</h1>
 
-    <a href="{{ path('hwi_oauth_service_redirect', {'service': 'google' }) }}">
-        <span>Login with Google</span>
-    </a>
+    <h1>Hello {{ user.username }} !</h1>
+
+    {% if user.heroes is empty %}
+        <div>
+            You have no hero! Create one to get started
+        </div>
+        <a href="{{ path('hero_creator') }}">Create Hero</a>
+    {% else %}
+        <div>
+            {% for hero in user.heroes %}
+                <a href="{{ path('hero_detail', {'id' : hero.id} ) }}">{{ hero.name }}</a>
+            {% endfor %}
+        </div>
+    {% endif %}
+
+    {% if is_granted('ROLE_ADMIN') %}
+        <a href="{{ path('admin_dashboard') }}">admin dashboard</a>
+    {% endif %}
+
 </div>
 {% endblock %}
