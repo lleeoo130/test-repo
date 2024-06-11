@@ -5,8 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/phpunit.xml.dist" beforeDir="false" afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WelcomeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/SmokeTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/SmokeTest.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" afterDir="false" />
+      <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" afterDir="false" />
+      <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" afterDir="false" />
+      <change beforePath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_bpm_dump.sql" afterDir="false" />
+      <change beforePath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_ticketing_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_ticketing_dump.sql" afterDir="false" />
+      <change beforePath="$USER_HOME$/meyclub/src/Meyclub/Fo/CommunBundle/Controller/FoController.php" beforeDir="false" afterPath="$USER_HOME$/meyclub/src/Meyclub/Fo/CommunBundle/Controller/FoController.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/meyclub/src/Meyclub/Fo/IdentificationBundle/Controller/IdentificationController.php" beforeDir="false" afterPath="$USER_HOME$/meyclub/src/Meyclub/Fo/IdentificationBundle/Controller/IdentificationController.php" afterDir="false" />
+      <change beforePath="$USER_HOME$/meyclub/src/Meyclub/Fo/IdentificationBundle/Controller/MFAController.php" beforeDir="false" afterPath="$USER_HOME$/meyclub/src/Meyclub/Fo/IdentificationBundle/Controller/MFAController.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +36,16 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitRewordedCommitMessages">
+    <option name="commitMessagesMapping">
+      <RewordedCommitMessageMapping>
+        <option name="originalMessage" value="FAB-4662: feat(mfa): regenerated dumps" />
+        <option name="rewordedMessage" value="FAB-4662: feat(mfa): regenerated dumps" />
+      </RewordedCommitMessageMapping>
+    </option>
+    <option name="currentCommit" value="1" />
+    <option name="onto" value="8ac7bcc88eeccb252e063cbcfb820e9cb57ed12c" />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
@@ -150,17 +175,23 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "/home/lrigier/bpm",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -175,15 +206,19 @@
         <option value="php-doctrine_inflector-37cbfb0ca1b6-b7cf42e2" />
         <option value="php-doctrine_inflector-37cbfb0ca1b6-badd9499" />
         <option value="php-doctrine_orm-37cbfb0ca1b6-073eaa2d" />
+        <option value="php-doctrine_orm-37cbfb0ca1b6-26dae787" />
         <option value="php-doctrine_orm-37cbfb0ca1b6-477974ee" />
         <option value="php-masterminds_html5-37cbfb0ca1b6-a9aa1a5a" />
+        <option value="php-monolog_monolog-37cbfb0ca1b6-e0e0ef64" />
         <option value="php-myclabs_deep_copy-37cbfb0ca1b6-68bb95f7" />
         <option value="php-nikic_php_parser-37cbfb0ca1b6-745939f6" />
         <option value="php-phar_io_version-37cbfb0ca1b6-97401194" />
+        <option value="php-phpoffice_phpspreadsheet-37cbfb0ca1b6-b20477e3" />
         <option value="php-phpstan_phpstan-37cbfb0ca1b6-97415758" />
         <option value="php-phpunit_php_code_coverage-37cbfb0ca1b6-0ac239bd" />
         <option value="php-phpunit_php_code_coverage-37cbfb0ca1b6-3ee34d07" />
         <option value="php-phpunit_phpunit-37cbfb0ca1b6-464036ab" />
+        <option value="php-squizlabs_php_codesniffer-37cbfb0ca1b6-9c5a078e" />
         <option value="php-symfony_cache-37cbfb0ca1b6-4eddb47e" />
         <option value="php-symfony_cache-37cbfb0ca1b6-a55690e3" />
         <option value="php-symfony_config-37cbfb0ca1b6-9212ded3" />
@@ -195,6 +230,7 @@
         <option value="php-symfony_dependency_injection-37cbfb0ca1b6-6900d56e" />
         <option value="php-symfony_dependency_injection-37cbfb0ca1b6-6a08d53e" />
         <option value="php-symfony_dom_crawler-37cbfb0ca1b6-83705ec5" />
+        <option value="php-symfony_dom_crawler-37cbfb0ca1b6-ee51d06c" />
         <option value="php-symfony_error_handler-37cbfb0ca1b6-2f7234f9" />
         <option value="php-symfony_filesystem-37cbfb0ca1b6-525f7c52" />
         <option value="php-symfony_finder-37cbfb0ca1b6-18267425" />
@@ -242,10 +278,34 @@
       <workItem from="1717070713703" duration="3790000" />
       <workItem from="1717086492435" duration="2792000" />
       <workItem from="1717332017981" duration="12243000" />
+      <workItem from="1718092461866" duration="21372000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="feature/FAB-4662" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

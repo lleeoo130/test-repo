@@ -19,6 +19,10 @@ class Hero
     #[ORM\Column(length: 255)]
     private ?string $level = null;
 
+    #[ORM\ManyToOne(inversedBy: 'heroes')]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?User $User = null;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -44,6 +48,18 @@ class Hero
     public function setLevel(string $level): static
     {
         $this->level = $level;
+
+        return $this;
+    }
+
+    public function getUser(): ?User
+    {
+        return $this->User;
+    }
+
+    public function setUser(?User $User): static
+    {
+        $this->User = $User;
 
         return $this;
     }

@@ -3,6 +3,8 @@
 namespace App\Entity;
 
 use App\Repository\UserRepository;
+use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
 
@@ -29,6 +31,17 @@ class User implements UserInterface
 
     #[ORM\Column(length: 255)]
     private ?string $username = null;
+
+    /**
+     * @var Collection<int, Hero>
+     */
+    #[ORM\OneToMany(targetEntity: Hero::class, mappedBy: 'User')]
+    private Collection $heroes;
+
+    public function __construct()
+    {
+        $this->heroes = new ArrayCollection();
+    }
 
     public function getId(): ?int
     {
@@ -110,6 +123,36 @@ class User implements UserInterface
     public function setUsername(string $username): static
     {
         $this->username = $username;
+
+        return $this;
+    }
+
+    /**
+     * @return Collection<int, Hero>
+     */
+    public function getHeroes(): Collection
+    {
+        return $this->heroes;
+    }
+
+    public function addHero(Hero $hero): static
+    {
+        if (!$this->heroes->contains($hero)) {
+            $this->heroes->add($hero);
+            $hero->setUser($this);
+        }
+
+        return $this;
+    }
+
+    public function removeHero(Hero $hero): static
+    {
+        if ($this->heroes->removeElement($hero)) {
+            // set the owning side to null (unless already changed)
+            if ($hero->getUser() === $this) {
+                $hero->setUser(null);
+            }
+        }
 
         return $this;
     }
