@@ -3,5 +3,9 @@
   <component name="VcsDirectoryMappings">
     <mapping directory="" vcs="Git" />
     <mapping directory="$USER_HOME$/bpm" vcs="Git" />
+    <mapping directory="$USER_HOME$/bpm/hm" vcs="Git" />
+    <mapping directory="$USER_HOME$/meyclub" vcs="Git" />
+    <mapping directory="$USER_HOME$/real_bpm" vcs="Git" />
+    <mapping directory="$USER_HOME$/real_bpm/hm" vcs="Git" />
   </component>
 </project>

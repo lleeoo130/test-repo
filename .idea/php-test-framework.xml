@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PhpTestFrameworkSettings">
+    <test_tools>
+      <tool tool_name="Behat">
+        <settings>
+          <configurations>
+            <local_configuration configuration_file_path="$USER_HOME$/bpm/microservices/behat.yml" executable_path="$USER_HOME$/bpm/microservices/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$USER_HOME$/bpm/service-accounting/behat.yml" executable_path="$USER_HOME$/bpm/service-accounting/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$USER_HOME$/bpm/service-mobile/behat.yml.dist" executable_path="$USER_HOME$/bpm/service-mobile/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$USER_HOME$/bpm/user-service/behat.yml" executable_path="$USER_HOME$/bpm/user-service/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$USER_HOME$/bpm/front-api-new/behat.yml" executable_path="$USER_HOME$/bpm/front-api-new/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+            <local_configuration configuration_file_path="$USER_HOME$/meyclub/behat.yml" executable_path="$USER_HOME$/meyclub/vendor/behat/behat/bin/behat" use_configuration_file="true" />
+          </configurations>
+        </settings>
+      </tool>
+    </test_tools>
+  </component>
+</project>
