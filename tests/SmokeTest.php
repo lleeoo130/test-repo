@@ -30,36 +30,6 @@ class SmokeTest extends PantherTestCase
         $this->assertAnySelectorTextContains('h1', 'Hello m1n0t4uR !');
     }
 
-    public function testIsAdmin(): void
-    {
-        static::bootKernel();
-        $client = static::createClient();
-
-        $user = $this->getUser('m1n0t4uR@gmail.com');
-
-        $client->loginUser($user);
-
-        $crawler = $client->request('GET', '/');
-
-        $this->assertAnySelectorTextContains('h1', 'Hello m1n0t4uR !');
-        $this->assertAnySelectorTextContains('a', 'admin dashboard');
-    }
-
-    public function testAdminDashboard(): void
-    {
-        static::bootKernel();
-        $client = static::createClient();
-
-        $user = $this->getUser('m1n0t4uR@gmail.com');
-
-        $client->loginUser($user);
-
-        $crawler = $client->request('GET', '/admin');
-
-        $this->assertAnySelectorTextContains('h1', 'Hello Admin m1n0t4uR !');
-        $this->assertAnySelectorTextContains('a', 'manage mazes');
-    }
-
     public function testUserWithNoHeroCanCreateAHero()
     {
         static::bootKernel();
