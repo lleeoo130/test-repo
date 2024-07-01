@@ -12,7 +12,17 @@
     <h1>Mazes Management</h1>
 
     <a href="{{ path('app_maze_creator') }}">create maze</a>
-    <p>You have no maze</p>
+
+    {% if mazes is defined and mazes is empty %}
+        <p>You have no maze</p>
+
+    {% else %}
+        {% for maze in mazes %}
+            <p> {{ maze.id }} </p>
+        {% endfor %}
+
+    {% endif %}
+
 
 </div>
 {% endblock %}
