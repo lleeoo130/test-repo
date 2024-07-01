@@ -1,0 +1,32 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Maze Creator{% endblock %}
+
+{% block body %}
+    <div class="example-wrapper">
+        <h1>Maze Configuration</h1>
+
+        <p>configure your maze</p>
+
+        {{ form_start(form) }}
+
+            {% for x in 1..maze.height %}
+
+                {% for x in 1..maze.width %}
+
+                    <select name="maze.configuration_{{ x }}" id="{{ x }}">
+                        <option value="empty">empty</option>
+                        <option value="spawn">spawn</option>
+                        <option value="wall">wall</option>
+                        <option value="exit">exit</option>
+                    </select>
+
+                {% endfor %}
+
+                <br>
+
+            {% endfor %}
+{#            <button type="submit">Submit</button>#}
+        {{ form_end(form) }}
+    </div>
+{% endblock %}

@@ -3,6 +3,7 @@
 namespace App\DataFixtures;
 
 use App\Entity\Hero;
+use App\Entity\Maze;
 use App\Entity\User;
 use Doctrine\Bundle\FixturesBundle\Fixture;
 use Doctrine\Persistence\ObjectManager;
@@ -31,9 +32,16 @@ class AppFixtures extends Fixture
             ->addHero($hero)
         ;
 
+        $maze = (new Maze())
+            ->setWidth(3)
+            ->setHeight(3)
+            ->setSize(9)
+        ;
+
         $manager->persist($userWithNoHero);
         $manager->persist($hero);
         $manager->persist($userWithHero);
+        $manager->persist($maze);
 
         $manager->flush();
     }
