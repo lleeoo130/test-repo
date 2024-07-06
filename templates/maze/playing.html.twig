@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello MazeController!{% endblock %}
+
+{% block body %}
+
+    <h1>PLAYING {{ maze.id }} </h1>
+
+    {% for x in 1..maze.height %}
+        <div style="display: flex; flex-direction: row; gap: 10px">
+            {% for y in 1..maze.width %}
+                <div id="{{ x ~ '_' ~ y }}" style="width: 75px; height: 75px">
+                    {% set point = maze.getPointByCoordinate(x,y) %}
+
+                    {{ point.type }}
+                    {% if hero.currentPoint.x is same as x and hero.currentPoint.y is same as y %}
+                        {{ hero.name }}
+                    {% endif %}
+
+                    {% if hero.canMoveToPoint(point) %}
+                        win
+                    {% endif %}
+                </div>
+            {% endfor %}
+        </div>
+    {% endfor %}
+
+{% endblock %}

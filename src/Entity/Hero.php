@@ -19,9 +19,8 @@ class Hero
     #[ORM\Column(length: 255)]
     private ?string $level = null;
 
-    #[ORM\ManyToOne(inversedBy: 'heroes')]
-    #[ORM\JoinColumn(nullable: false)]
-    private ?User $User = null;
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    private ?Point $currentPoint = null;
 
     public function getId(): ?int
     {
@@ -52,15 +51,27 @@ class Hero
         return $this;
     }
 
-    public function getUser(): ?User
+    public function getCurrentPoint(): ?Point
     {
-        return $this->User;
+        return $this->currentPoint;
     }
 
-    public function setUser(?User $User): static
+    public function setCurrentPoint(?Point $currentPoint): static
     {
-        $this->User = $User;
+        $this->currentPoint = $currentPoint;
 
         return $this;
+    }
+
+    public function canMoveToPoint(Point $point): bool
+    {
+        return $this->currentPoint !== $point &&
+            ( $this->currentPoint->getX() - $point->getX() === 0 ||
+            $this->currentPoint->getX() - $point->getX() === 1 ||
+            $this->currentPoint->getX() - $point->getX() === -1 ) &&
+            ( $this->currentPoint->getY() - $point->getY() === 0 ||
+                $this->currentPoint->getY() - $point->getY() === 1 ||
+                $this->currentPoint->getY() - $point->getY() === -1 )
+        ;
     }
 }

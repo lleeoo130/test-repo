@@ -32,15 +32,11 @@ class User implements UserInterface
     #[ORM\Column(length: 255)]
     private ?string $username = null;
 
-    /**
-     * @var Collection<int, Hero>
-     */
-    #[ORM\OneToMany(targetEntity: Hero::class, mappedBy: 'User')]
-    private Collection $heroes;
+    #[ORM\OneToOne(cascade: ['persist', 'remove'])]
+    private ?Hero $hero = null;
 
     public function __construct()
     {
-        $this->heroes = new ArrayCollection();
     }
 
     public function getId(): ?int
@@ -127,32 +123,14 @@ class User implements UserInterface
         return $this;
     }
 
-    /**
-     * @return Collection<int, Hero>
-     */
-    public function getHeroes(): Collection
+    public function getHero(): ?Hero
     {
-        return $this->heroes;
+        return $this->hero;
     }
 
-    public function addHero(Hero $hero): static
+    public function setHero(?Hero $hero): static
     {
-        if (!$this->heroes->contains($hero)) {
-            $this->heroes->add($hero);
-            $hero->setUser($this);
-        }
-
-        return $this;
-    }
-
-    public function removeHero(Hero $hero): static
-    {
-        if ($this->heroes->removeElement($hero)) {
-            // set the owning side to null (unless already changed)
-            if ($hero->getUser() === $this) {
-                $hero->setUser(null);
-            }
-        }
+        $this->hero = $hero;
 
         return $this;
     }
