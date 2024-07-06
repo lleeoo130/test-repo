@@ -73,9 +73,15 @@ class AdminTest extends PantherTestCase
 
         $this->assertAnySelectorTextContains('h1', 'Maze Configuration');
 
-        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_1', 'empty');
-        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_2', 'empty');
-        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_3', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_1_1', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_1_2', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_1_3', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_2_1', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_2_2', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_2_3', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_3_1', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_3_2', 'empty');
+        $this->assertFormValue('#maze_configuration_submit', 'maze.configuration_3_3', 'empty');
     }
 
     private function getMaze()

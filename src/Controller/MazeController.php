@@ -2,7 +2,10 @@
 
 namespace App\Controller;
 
+use App\Entity\Factory\PointFactory;
+use App\Entity\Hero;
 use App\Entity\Maze;
+use App\Entity\Parser\MazeConfigurationParser;
 use App\Form\MazeConfigurationType;
 use App\Form\MazeType;
 use App\Repository\MazeRepository;
@@ -48,15 +51,29 @@ class MazeController extends AbstractController
     }
 
     #[Route('/admin/maze_configuration/{id}', name: 'app_maze_configuration')]
-    public function configuration(Maze $maze, Request $request, EntityManagerInterface $entityManager): Response
+    public function configuration(
+        Maze $maze,
+        Request $request,
+        EntityManagerInterface $entityManager,
+        PointFactory $pointFactory,
+        MazeConfigurationParser $parser
+    ): Response
     {
         $form = $this->createForm(MazeConfigurationType::class, $maze);
 
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $maze->setConfiguration($this->handlePoints($request->request));
+            $pointsArray = $parser->parse($request->request);
 
+            foreach ($pointsArray as $coordinate => $type) {
+                $point = $pointFactory->createFromConfigurationArray($maze, [$coordinate => $type]);
+
+                $entityManager->persist($point);
+                $maze->addPoint($point);
+            }
+
+            $entityManager->persist($maze);
             $entityManager->flush();
 
             return $this->redirectToRoute('app_maze');
@@ -68,18 +85,19 @@ class MazeController extends AbstractController
         ]);
     }
 
-    private function handlePoints(ParameterBag $request): array
+    #[Route('/playing/maze/{id}', name: 'app_playing_maze')]
+    public function play(Maze $maze): Response
     {
-        $result = [];
-        foreach ($request as $key => $value) {
+        /** @var Hero */
+        $hero = $this->getUser()->getHero();
 
-            $keyRegex = 'maze_configuration_';
-
-            if (str_contains($key, $keyRegex)) {
-                $result[(int) str_replace($keyRegex, '', $key)] = $value;
-            }
+        if (is_null($hero->getCurrentPoint())) {
+            $hero->setCurrentPoint($maze->getPoints()->get(38));
         }
 
-        return $result;
+        return $this->render('maze/playing.html.twig', [
+            'maze' => $maze,
+            'hero' => $hero,
+        ]);
     }
 }

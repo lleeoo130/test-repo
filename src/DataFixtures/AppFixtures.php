@@ -29,7 +29,7 @@ class AppFixtures extends Fixture
             ->setEmail('i_have_hero@gmail.com')
             ->setRoles(['ROLE_USER'])
             ->setGoogle('777')
-            ->addHero($hero)
+            ->setHero($hero)
         ;
 
         $maze = (new Maze())

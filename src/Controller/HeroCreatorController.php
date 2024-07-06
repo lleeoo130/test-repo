@@ -15,16 +15,16 @@ class HeroCreatorController extends AbstractController
     #[Route('/hero_creator', name: 'hero_creator')]
     public function index(Request $request, EntityManagerInterface $manager): Response
     {
-        $user = $this->getUser();
 
-        $newHero = (new Hero())->setUser($user);
-
-        $form = $this->createForm(HeroType::class, $newHero);
+        $form = $this->createForm(HeroType::class, new Hero());
 
         $form->handleRequest($request);
         if ($form->isSubmitted() && $form->isValid()) {
             $submittedHero = $form->getData();
             $submittedHero->setLevel('1');
+            /** @var $user */
+            $user = $this->getUser();
+            $user->setHero($submittedHero);
 
             $manager->persist($submittedHero);
             $manager->flush();
@@ -33,7 +33,6 @@ class HeroCreatorController extends AbstractController
         }
 
         return $this->render('hero_creator/index.html.twig', [
-            'user' => $user,
             'form' => $form
         ]);
     }

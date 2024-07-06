@@ -15,14 +15,14 @@ class MazeType extends AbstractType
     {
         $builder
             ->add('width', ChoiceType::class, ['choices' => [
-                3 => 3,
-                4 => 4,
-                5 => 5,
+                8 => 8,
+                16 => 16,
+                24 => 24,
             ]])
             ->add('height', ChoiceType::class, ['choices' => [
-                3 => 3,
-                4 => 4,
-                5 => 5,
+                8 => 8,
+                16 => 16,
+                24 => 24,
             ]])
             ->add('submit', SubmitType::class)
         ;

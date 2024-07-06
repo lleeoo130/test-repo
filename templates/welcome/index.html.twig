@@ -12,22 +12,25 @@
 
     <h1>Hello {{ user.username }} !</h1>
 
-    {% if user.heroes is empty %}
+    {% if user.hero is empty %}
         <div>
             You have no hero! Create one to get started
         </div>
         <a href="{{ path('hero_creator') }}">Create Hero</a>
     {% else %}
         <div>
-            {% for hero in user.heroes %}
-                <a href="{{ path('hero_detail', {'id' : hero.id} ) }}">{{ hero.name }}</a>
-            {% endfor %}
+            <a href="{{ path('hero_detail', {'id' : user.hero.id}) }}">{{ user.hero.name }}</a>
         </div>
     {% endif %}
 
     {% if is_granted('ROLE_ADMIN') %}
         <a href="{{ path('admin_dashboard') }}">admin dashboard</a>
     {% endif %}
+
+    <h3>PLAY</h3>
+    {% for maze in mazes %}
+        <a href="{{ path('app_playing_maze', {'id' : maze.id}) }}">{{ maze.id }}</a>
+    {% endfor %}
 
 </div>
 {% endblock %}

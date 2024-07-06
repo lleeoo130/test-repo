@@ -5,19 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Factory/PointFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/migrations/Version20240611181532.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MazeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MazeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WelcomeController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maze/creator.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/creator.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maze/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Hero.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Maze.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Maze.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MazeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MazeType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maze/configuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/configuration.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/AdminTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AdminTest.php" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_bpm_dump.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_ticketing_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/middleoffice_database_ticketing_dump.sql" afterDir="false" />
-      <change beforePath="$USER_HOME$/meyclub/features/bootstrap/FixturesContext.php" beforeDir="false" afterPath="$USER_HOME$/meyclub/features/bootstrap/FixturesContext.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -1339,29 +1347,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
-    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/lrigier/amazing/test&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/lrigier/meyclub/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
+    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
+    "WebServerToolWindowPanel.toolwindow.show.date": "false",
+    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
+    "WebServerToolWindowPanel.toolwindow.show.size": "false",
+    "last_opened_file_path": "/home/lrigier/amazing/test",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "/home/lrigier/meyclub/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;mysql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "mysql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$USER_HOME$/meyclub/features/P50/Security/Csrf/e2e" />
@@ -1525,7 +1533,8 @@
       <workItem from="1719213235842" duration="15722000" />
       <workItem from="1719300573750" duration="29604000" />
       <workItem from="1719693048534" duration="1898000" />
-      <workItem from="1719815776143" duration="19780000" />
+      <workItem from="1719815776143" duration="36499000" />
+      <workItem from="1720268630086" duration="12688000" />
     </task>
     <servers />
   </component>

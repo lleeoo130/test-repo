@@ -12,9 +12,9 @@
 
             {% for x in 1..maze.height %}
 
-                {% for x in 1..maze.width %}
+                {% for y in 1..maze.width %}
 
-                    <select name="maze.configuration_{{ x }}" id="{{ x }}">
+                    <select name="maze.configuration_{{ x ~ '_' ~ y }}" id="{{ x ~ '_' ~ y }}">
                         <option value="empty">empty</option>
                         <option value="spawn">spawn</option>
                         <option value="wall">wall</option>
@@ -26,7 +26,6 @@
                 <br>
 
             {% endfor %}
-{#            <button type="submit">Submit</button>#}
         {{ form_end(form) }}
     </div>
 {% endblock %}
