@@ -61,8 +61,8 @@ class AdminTest extends PantherTestCase
         $this->assertAnySelectorTextContains('h1', 'Maze Creation');
         $this->assertAnySelectorTextContains('p', 'create your maze');
 
-        $this->assertFormValue('#maze_submit', 'maze[width]', 3);
-        $this->assertFormValue('#maze_submit', 'maze[height]', 3);
+        $this->assertFormValue('#maze_submit', 'maze[width]', 8);
+        $this->assertFormValue('#maze_submit', 'maze[height]', 8);
     }
 
     public function testAdminCanGoToMazeConfigurationPage(): void

@@ -6,6 +6,7 @@ use App\Entity\Factory\PointFactory;
 use App\Entity\Hero;
 use App\Entity\Maze;
 use App\Entity\Parser\MazeConfigurationParser;
+use App\Entity\Point;
 use App\Form\MazeConfigurationType;
 use App\Form\MazeType;
 use App\Repository\MazeRepository;
@@ -92,12 +93,25 @@ class MazeController extends AbstractController
         $hero = $this->getUser()->getHero();
 
         if (is_null($hero->getCurrentPoint())) {
-            $hero->setCurrentPoint($maze->getPoints()->get(38));
+            $hero->setCurrentPoint($maze->getPoints()->get(0));
         }
 
         return $this->render('maze/playing.html.twig', [
             'maze' => $maze,
             'hero' => $hero,
         ]);
+    }
+
+    #[Route('/moving/{id}', name: 'app_playing_maze_moving')]
+    public function move(Point $point, EntityManagerInterface $entityManager): Response
+    {
+        /** @var Hero */
+        $hero = $this->getUser()->getHero();
+
+        $hero->setCurrentPoint($point);
+
+        $entityManager->flush();
+
+        return $this->redirectToRoute('app_playing_maze', ['id' => $point->getMaze()->getId()]);
     }
 }

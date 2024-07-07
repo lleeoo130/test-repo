@@ -5,21 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Entity/Factory/PointFactory.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20240611181532.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MazeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MazeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/WelcomeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/WelcomeController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Hero.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Hero.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/Maze.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Maze.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Form/MazeType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MazeType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/admin/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/maze/configuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/configuration.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/welcome/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maze/playing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/playing.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/AdminTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AdminTest.php" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" afterDir="false" />
@@ -1534,7 +1522,7 @@
       <workItem from="1719300573750" duration="29604000" />
       <workItem from="1719693048534" duration="1898000" />
       <workItem from="1719815776143" duration="36499000" />
-      <workItem from="1720268630086" duration="12688000" />
+      <workItem from="1720268630086" duration="16461000" />
     </task>
     <servers />
   </component>
