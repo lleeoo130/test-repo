@@ -11,12 +11,12 @@
             {% for y in 1..maze.width %}
             {% set point = maze.getPointByCoordinate(x,y) %}
 
-                {% if hero.canMoveToPoint(point) and point.type is not same as 'wall'  %}
+                {% if point.type.blocking is not same as true and hero.canMoveToPoint(point)  %}
                     <a href="{{ path('app_playing_maze_moving', {id : point.id}) }}" style="width: 75px; height: 75px">move here</a>
                 {% else %}
                 <div id="{{ x ~ '_' ~ y }}" style="width: 75px; height: 75px">
 
-                    {{ point.type }}
+                    {{ point.type.name }}
                     {% if hero.currentPoint.x is same as x and hero.currentPoint.y is same as y %}
                         {{ hero.name }}
                     {% endif %}

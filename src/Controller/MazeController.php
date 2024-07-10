@@ -60,7 +60,7 @@ class MazeController extends AbstractController
         MazeConfigurationParser $parser
     ): Response
     {
-        $form = $this->createForm(MazeConfigurationType::class, $maze);
+        $form = $this->createForm(MazeConfigurationType::class, $maze, ['maze' => $maze]);
 
         $form->handleRequest($request);
 

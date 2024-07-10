@@ -15,7 +15,6 @@ class HeroCreatorController extends AbstractController
     #[Route('/hero_creator', name: 'hero_creator')]
     public function index(Request $request, EntityManagerInterface $manager): Response
     {
-
         $form = $this->createForm(HeroType::class, new Hero());
 
         $form->handleRequest($request);
