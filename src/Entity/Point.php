@@ -17,14 +17,15 @@ class Point
     #[ORM\JoinColumn(nullable: false)]
     private ?Maze $maze = null;
 
-    #[ORM\Column(length: 255)]
-    private ?string $type = null;
-
     #[ORM\Column]
     private ?int $x = null;
 
     #[ORM\Column]
     private ?int $y = null;
+
+    #[ORM\ManyToOne]
+    #[ORM\JoinColumn(nullable: false)]
+    private ?PointType $type = null;
 
     public function getId(): ?int
     {
@@ -39,18 +40,6 @@ class Point
     public function setMaze(?maze $maze): static
     {
         $this->maze = $maze;
-
-        return $this;
-    }
-
-    public function getType(): ?string
-    {
-        return $this->type;
-    }
-
-    public function setType(string $type): static
-    {
-        $this->type = $type;
 
         return $this;
     }
@@ -75,6 +64,18 @@ class Point
     public function setY(int $y): static
     {
         $this->y = $y;
+
+        return $this;
+    }
+
+    public function getType(): ?PointType
+    {
+        return $this->type;
+    }
+
+    public function setType(?PointType $type): static
+    {
+        $this->type = $type;
 
         return $this;
     }

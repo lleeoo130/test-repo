@@ -5,10 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="88a9c7e5-d2cd-42cb-8d1e-c33d78214d2f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/styles/app.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/nav.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/phpspec.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/phpspec.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/bundles.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/services.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/HeroCreatorController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/MazeController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MazeController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Factory/PointFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Factory/PointFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Parser/MazeConfigurationParser.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Parser/MazeConfigurationParser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/Point.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/Point.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Form/MazeConfigurationType.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Form/MazeConfigurationType.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/symfony.lock" beforeDir="false" afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/maze/configuration.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/configuration.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/maze/playing.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/maze/playing.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/AdminTest.php" beforeDir="false" afterPath="$PROJECT_DIR$/tests/AdminTest.php" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/dump_ticketing_fixtures.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_bpm_dump.sql" afterDir="false" />
       <change beforePath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" beforeDir="false" afterPath="$USER_HOME$/bpm/microservices/config/dump/meyclub_database_ticketing_dump.sql" afterDir="false" />
@@ -64,6 +81,7 @@
     <option name="onto" value="961379d436b47ec618735b82aea52f6cec7a5435" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/assets/styles/app.css" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/config/services.yaml" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/DataFixtures/AppFixtures.php" root0="FORCE_HIGHLIGHTING" root1="FORCE_HIGHLIGHTING" />
   </component>
@@ -1323,6 +1341,10 @@
       <path value="$USER_HOME$/bpm/user-service/vendor/willdurand/negotiation" />
       <path value="$USER_HOME$/bpm/user-service/vendor/zendframework/zend-code" />
       <path value="$USER_HOME$/meyclub/vendor/psr/clock" />
+      <path value="$PROJECT_DIR$/vendor/twbs/bootstrap" />
+      <path value="$PROJECT_DIR$/vendor/symfonycasts/sass-bundle" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset-mapper" />
+      <path value="$PROJECT_DIR$/vendor/symfony/asset" />
     </include_path>
   </component>
   <component name="ProjectColorInfo">{
@@ -1335,29 +1357,29 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.mappings": "true",
-    "WebServerToolWindowPanel.toolwindow.highlight.symlinks": "true",
-    "WebServerToolWindowPanel.toolwindow.show.date": "false",
-    "WebServerToolWindowPanel.toolwindow.show.permissions": "false",
-    "WebServerToolWindowPanel.toolwindow.show.size": "false",
-    "last_opened_file_path": "/home/lrigier/amazing/test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "ts.external.directory.path": "/home/lrigier/meyclub/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.mappings&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.highlight.symlinks&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.date&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.permissions&quot;: &quot;false&quot;,
+    &quot;WebServerToolWindowPanel.toolwindow.show.size&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/lrigier/amazing/test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/lrigier/meyclub/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$USER_HOME$/meyclub/features/P50/Security/Csrf/e2e" />
@@ -1522,7 +1544,8 @@
       <workItem from="1719300573750" duration="29604000" />
       <workItem from="1719693048534" duration="1898000" />
       <workItem from="1719815776143" duration="36499000" />
-      <workItem from="1720268630086" duration="16461000" />
+      <workItem from="1720268630086" duration="63826000" />
+      <workItem from="1720595229207" duration="743000" />
     </task>
     <servers />
   </component>

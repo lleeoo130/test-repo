@@ -62,3 +62,17 @@ cc: sf
 
 fixtures: ## Loads fixtures
 	@$(PHP_CONT) bin/console doctrine:fixtures:load --no-interaction
+
+
+## —— Assets 🎵 ———————————————————————————————————————————————————————————————
+
+asset-build: ## Builds assets
+	@$(PHP_CONT) bin/console sass:build --no-interaction
+
+asset-watch: ## Builds and watches assets
+	@$(PHP_CONT) bin/console sass:build --watch
+
+asset-deploy: ## Builds assets and compiles them into a file
+asset-deploy: asset-build
+	@$(PHP_CONT) bin/console asset-map:compile --no-interaction
+

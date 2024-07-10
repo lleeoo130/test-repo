@@ -4,19 +4,28 @@ namespace App\Entity\Factory;
 
 use App\Entity\Maze;
 use App\Entity\Point;
+use App\Entity\PointType;
+use Doctrine\Persistence\ObjectRepository;
 
 class PointFactory
 {
-    public function createFromConfigurationArray(Maze $maze, array $configuration): Point
+    private $pointTypeRepository;
+
+    public function __construct(ObjectRepository $pointTypeRepository)
     {
-        $coordinateString = array_keys($configuration)[0];
+        $this->pointTypeRepository = $pointTypeRepository;
+    }
+
+    public function createFromConfigurationArray(Maze $maze, array $pointsConfiguration): Point
+    {
+        $coordinateString = array_keys($pointsConfiguration)[0];
         list($x, $y) = explode("_", $coordinateString, 2);
 
         return (new Point())
             ->setMaze($maze)
             ->setX($x)
             ->setY($y)
-            ->setType($configuration[$coordinateString])
+            ->setType($this->pointTypeRepository->find(array_values($pointsConfiguration)[0]))
         ;
     }
 }

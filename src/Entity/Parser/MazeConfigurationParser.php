@@ -9,8 +9,9 @@ class MazeConfigurationParser
     public function parse(ParameterBag $parameterBag): array
     {
         $result = [];
-        foreach ($parameterBag as $key => $value) {
-            $keyRegex = 'maze_configuration_';
+        $keyRegex = 'configuration_';
+
+        foreach ($parameterBag->all()['maze_configuration'] as $key => $value) {
 
             if (str_contains($key, $keyRegex)) {
                 $result[str_replace($keyRegex, '', $key)] = $value;

@@ -9,23 +9,6 @@
         <p>configure your maze</p>
 
         {{ form_start(form) }}
-
-            {% for x in 1..maze.height %}
-
-                {% for y in 1..maze.width %}
-
-                    <select name="maze.configuration_{{ x ~ '_' ~ y }}" id="{{ x ~ '_' ~ y }}">
-                        <option value="empty">empty</option>
-                        <option value="spawn">spawn</option>
-                        <option value="wall">wall</option>
-                        <option value="exit">exit</option>
-                    </select>
-
-                {% endfor %}
-
-                <br>
-
-            {% endfor %}
         {{ form_end(form) }}
     </div>
 {% endblock %}
